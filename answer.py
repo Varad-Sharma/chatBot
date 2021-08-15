@@ -12,6 +12,37 @@ def askWiki(string):
         print("Can't find the page")
 
 
+def askMath(num1,num2):
+    try:
+        arimenticType = input("Enter the sign on which it will evaluate: ")
+    except ValueError():
+        print("Wrong input!\n")
+    
+    if arimenticType == "Add":
+        try:
+            add = num1 + num2
+            print("answer is ", add)
+        except ArithmeticError():
+            print("An error occured in adding!\n")
+
+    elif arimenticType == "Subtract":
+        try:
+            difference = num1 - num2
+            print("answer is ", difference)
+        except ArithmeticError():
+            print("An error occured in subtracting\n")
+    
+    elif arimenticType == "Multiply":
+        try:
+            product = num1 * num2
+            print("answer is ", product)
+        except ArithmeticError():
+            print("An error occured in multiplying\n")
+        
+    else:
+        print("Only MAS is supported")
+
+
 def answerMaker():
     print("Type your words:")
     qurie = input()
@@ -39,6 +70,20 @@ def answerMaker():
         searchQurie = input()
         askWiki(searchQurie)
         print("\n")
+
+    elif qurie == "Motivate me":
+        print("You can do it \n You are the best\n")
+    
+    elif qurie == "Math":
+    
+        print("Enter the first number: ")
+        num1 = float(input())
+        print("Enter the second number: ")
+        num2 = float(input())
+    
+        print("Wrong input\n")
+
+        askMath(num1, num2)
         
 
     elif qurie == "Bye":
