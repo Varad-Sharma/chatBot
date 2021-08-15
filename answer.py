@@ -6,7 +6,10 @@ isRunning = True
 
 
 def askWiki(string):
-    print(wikipedia.summary(string))
+    try:
+        print(wikipedia.summary(string))
+    except wikipedia.exceptions.PageError:
+        print("Can't find the page")
 
 
 def answerMaker():
