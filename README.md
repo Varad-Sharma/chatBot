@@ -16,11 +16,8 @@ Functions available right now :
 - Can answer basic consersational questions
 - Can search on wikipedia
 - Math(MAS ONLY)
+- Speech of text on screen
 
-
-Functions to add:
-- FIle IO
-- ETC
 
 
 To Run the bot Execute the controller.py as it contains the brain
