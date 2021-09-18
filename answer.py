@@ -116,7 +116,7 @@ def answerMaker():
         
 
     elif qurie == "Bye":
-        sepak("see you next time")
+        sepak("see you next time")  
         print("Bye\nSee You next time")
         time.sleep(1.5)
         sys.exit()
